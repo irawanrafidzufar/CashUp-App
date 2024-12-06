@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/grey"
+    android:layout_height="match_parent"
+    tools:context=".loginForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="80dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/email_foreground"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext2"
+            android:textSize="10pt"
+            android:padding="10dp"
+            android:id="@+id/email"
+            android:hint="Email"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/lock_foreground"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext2"
+                android:textSize="10pt"
+                android:padding="10dp"
+                android:id="@+id/password"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/login"
+            android:layout_marginLeft="200dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/button"
+            android:src="@mipmap/login_foreground"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
